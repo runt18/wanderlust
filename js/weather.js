@@ -28,7 +28,7 @@ module.exports = function(city) {
     $('#weather-link').attr('href', href);
 
     if (navigator.geolocation) {
-      rnavigator.geolocation.getCurrentPosition(function(pos) {
+      navigator.geolocation.getCurrentPosition(function(pos) {
         var dist, plane_speed, price, start, travel_time;
 
         start = pos.coords;
