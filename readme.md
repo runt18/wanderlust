@@ -6,6 +6,14 @@
 
 Somewhere is a website that gives you inspiration for new places to visit on holiday.
 
+## Installing
+
+```bash
+git clone https://github.com/lavelle/somewhere
+cd somewhere
+make install
+```
+
 ## Building
 
 To build the webapp, run `make site`. To build the Chrome extension, run `make chrome`.

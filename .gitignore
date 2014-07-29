@@ -3,3 +3,8 @@ vendor
 node_modules
 site
 .DS_Store
+extension/image
+extension/js
+extension/vendor
+extension/index.html
+
