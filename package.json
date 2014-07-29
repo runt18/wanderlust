@@ -2,22 +2,14 @@
   "name": "",
   "version": "0.0.1",
   "description": "",
-  "main": "js/all.js",
-  "dependencies": {
-    "coffeeify": "^0.6.0",
-    "grunt-browserify": "^2.1.3",
-    "load-grunt-tasks": "^0.6.0"
-  },
+  "main": "js/main.js",
+  "dependencies": {},
   "devDependencies": {
+    "browserify": "^5.9.1",
     "grunt": "*",
-    "grunt-contrib-jst": "*",
-    "grunt-contrib-coffee": "*",
-    "grunt-contrib-stylus": "*",
-    "grunt-contrib-watch": "*",
     "grunt-contrib-connect": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-uglify": "*"
+    "grunt-contrib-stylus": "*",
+    "load-grunt-tasks": "^0.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,9 +1,9 @@
-var photo = require('./photo.coffee');
-var weather = require('./weather.coffee');
-var accomodation = require('./accomodation.coffee');
-var travel = require('./travel.coffee');
-var util = require('./util.coffee');
-var cities = require('./cities.coffee');
+var photo = require('./photo');
+var weather = require('./weather');
+var accomodation = require('./accomodation');
+var travel = require('./travel');
+var util = require('./util');
+var cities = require('./cities');
 
 var city = cities[util.choice(cities)];
 

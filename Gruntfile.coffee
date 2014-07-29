@@ -18,12 +18,7 @@ module.exports = (grunt) ->
       server:
         options:
           keepalive: true
-
-    browserify:
-      compile:
-        files: 'js/all.js': 'coffee/main.coffee'
-        options:
-          transform: ['coffeeify']
+          port: 1234
 
     require('load-grunt-tasks')(grunt)
 

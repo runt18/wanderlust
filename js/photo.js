@@ -1,4 +1,4 @@
-var util = require('./util.coffee');
+var util = require('./util');
 
 module.exports = function(city) {
   var url = 'http://500px.com/search?';
