@@ -18,7 +18,7 @@ VENDOR = \
 
 site:
 	mkdir -p $(SITE)
-	rsync -Rr index.html favicon.png image/logo.png $(VENDOR) $(SITE)
+	rsync -Rr index.html image/logo.png $(VENDOR) $(SITE)
 	$(BROWSERIFY) js/main.js > site/all.js
 	$(STYLUS) --use ./node_modules/nib stylus/style.styl -o site
 
@@ -39,3 +39,8 @@ install:
 
 serve:
 	serve -p $(PORT) site > /dev/null
+
+icons:
+	mkdir -p extension/icons
+	convert -resize x16 image/logo.png site/favicon.png
+	convert -resize x128 image/logo.png extension/icons/128.png
