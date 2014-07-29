@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "somewhere",
   "version": "0.0.1",
-  "description": "",
+  "description": "Somewhere is a website that gives you inspiration for new places to visit on holiday.",
   "main": "js/main.js",
   "dependencies": {},
   "devDependencies": {
