@@ -1,0 +1,16 @@
+{
+  "name": "go",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "jquery": "2",
+    "bootstrap": "~3.2.0",
+    "geolib": "~2.0.9",
+    "font-awesome": "~4.1.0",
+    "gmaps": "~0.4.13"
+  }
+}

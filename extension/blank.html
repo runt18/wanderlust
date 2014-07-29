@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Somewhere</title>
+
+<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="favicon.png">
+<meta charset='utf-8'>
+
+</head>
+
+<body>
+
+<div class="full-overlay"></div>
+
+<div class="wrapper">
+    <div id="mapwrap">
+        <div id="map"></div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+<!-- <img src="image/logo.png" alt="Logo" id="logo"> -->
+
+<div class="container">
+    <div class="row title">
+        <h2></h2>
+        <h1><span class="name"></span></h1>
+    </div>
+
+    <hr>
+
+    <div class="row facts one">
+        <div class="col-md-6">
+            <h3><i class="fa fa-home"></i> Accommodation</h3>
+            The average 1 person <a href="" target="_blank" id="airbnb-link">Airbnb room</a> costs $<span class="price"></span> per night.
+        </div>
+
+        <div class="col-md-6">
+            <h3><i class="fa fa-sun-o"></i> Weather</h3>
+            The <a href="" target="_blank" id="weather-link">weather there</a> right now is <span class="degrees"></span>&deg; C and <span class="weather"></span>.
+        </div>
+    </div>
+
+    <div class="row facts">
+        <div class="col-md-6">
+            <h3><i class="fa fa-plane"></i> Travel</h3>
+            It's <a href="" target="_blank" id="place-link"><span class="distance"></span> miles</a> away from you. A round trip flight costs about $<span class="flight-price"></span>. The journey takes about <span class="travel-time"></span> hours each way.
+        </div>
+
+        <div class="col-md-6">
+            <h3><i class="fa fa-map-marker"></i> Attractions</h3>
+            When you're there you should check out <a href="" target="_blank" id="t1"></a>, <a href="" target="_blank" id="t2"></a> and <a href="" target="_blank" id="t3"></a>.
+        </div>
+    </div>
+
+    <hr>
+
+<!--     <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-danger"><i class="fa fa-times"></i> <span class="rejection"></span></button>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        Made by <a href="http://lavelle.co" target="_blank">Giles Lavelle</a> and <a href="http://kathyzhou.com" target="_blank">Kathy Zhou</a> in 24 hours for <a href="http://greylocku.com/hackfest/" target="_blank">Greylock Hackfest</a> 2014.
+    </footer> -->
+</div>
+
+<!-- Uncomment for build -->
+<!-- <script src="js/vendor.js" charset="utf-8"></script> -->
+
+<!-- Comment out for build -->
+<script src="vendor/jquery.js"></script>
+<script src="vendor/geolib.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="vendor/gmaps.js"></script>
+
+<script src="js/all.js" charset="utf-8"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Somewhere Travel",
+  "description": "Travel recommendations",
+  "version": "0.2",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "blank.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://somewhere.cf/*",
+    "http://maps.google.com/maps/api/js?sensor=true"
+  ],
+  "manifest_version": 2
+}
