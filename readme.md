@@ -1,6 +1,6 @@
 # Wanderlust
 
-![Banner](https://github.com/lavelle/somewhere/blob/master/image/banner.jpg "Banner")
+![Banner](https://github.com/lavelle/wanderlust/blob/master/image/banner.jpg "Banner")
 
 ## Intro
 
@@ -10,7 +10,7 @@ Wanderlust is a website that gives you inspiration for new places to visit on ho
 
 ```bash
 git clone https://github.com/lavelle/wanderlust
-cd somewhere
+cd wanderlust
 make install
 ```
 
