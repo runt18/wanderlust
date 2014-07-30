@@ -1,4 +1,4 @@
-# Somewhere
+# Wanderlust
 
 ![Banner](https://github.com/lavelle/somewhere/blob/master/image/banner.jpg "Banner")
 
