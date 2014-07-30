@@ -11,18 +11,6 @@ module.exports = function(city) {
       longitude: data.coord.lon
     };
 
-    var map = new GMaps({
-      div: '#map',
-      lat: end.latitude,
-      lng: end.longitude,
-      zoom: 10
-    });
-
-    map.addMarker({
-      lat: end.latitude,
-      lng: end.longitude
-    });
-
     var href = "http://forecast.io/#/f/" + end.latitude + "," + end.longitude;
 
     $('#weather-link').attr('href', href);
