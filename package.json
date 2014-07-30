@@ -1,7 +1,7 @@
 {
-  "name": "somewhere",
+  "name": "wanderlust",
   "version": "0.0.1",
-  "description": "Somewhere is a website that gives you inspiration for new places to visit on holiday.",
+  "description": "Vacation inspiration",
   "main": "js/main.js",
   "dependencies": {},
   "devDependencies": {

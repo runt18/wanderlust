@@ -4,12 +4,12 @@
 
 ## Intro
 
-Somewhere is a website that gives you inspiration for new places to visit on holiday.
+Wanderlust is a website that gives you inspiration for new places to visit on holiday.
 
 ## Installing
 
 ```bash
-git clone https://github.com/lavelle/somewhere
+git clone https://github.com/lavelle/wanderlust
 cd somewhere
 make install
 ```
