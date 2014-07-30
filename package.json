@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "browserify": "^5.9.1",
+    "mocha": "^1.21.3",
     "nib": "^1.0.3",
     "serve": "^1.4.0",
     "stylus": "^0.47.3"

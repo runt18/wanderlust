@@ -1,8 +1,11 @@
-.PHONY: deploy site clean install chrome
+.PHONY: deploy site clean install chrome test
 
-BROWSERIFY = ./node_modules/.bin/browserify
-SERVE = ./node_modules/.bin/serve
-STYLUS = ./node_modules/.bin/stylus
+BIN = ./node_modules/.bin
+
+BROWSERIFY = $(BIN)/browserify
+SERVE = $(BIN)/serve
+STYLUS = $(BIN)/stylus
+MOCHA = $(BIN)/mocha
 
 PORT = 1234
 
@@ -44,3 +47,6 @@ icons:
 	mkdir -p extension/icons
 	convert -resize x16 image/logo.png site/favicon.png
 	convert -resize x128 image/logo.png extension/icons/128.png
+
+test:
+	$(MOCHA)
