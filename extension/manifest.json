@@ -1,6 +1,6 @@
 {
   "name": "Wanderlust",
-  "description": "Vacation inspiration",
+  "description": "Replace new tab page with a dashboard for vacation inspiration",
   "version": "0.2",
   "incognito": "split",
   "chrome_url_overrides": {
@@ -9,7 +9,8 @@
   "permissions": [
     "tabs",
     "http://somewhere.cf/*",
-    "https://maps.google.com/maps/api/js?sensor=true"
+    "https://maps.google.com/maps/api/js?sensor=true",
+    "geolocation"
   ],
   "manifest_version": 2
 }
