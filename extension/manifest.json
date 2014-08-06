@@ -1,7 +1,7 @@
 {
   "name": "Wanderlust",
   "description": "Replace new tab page with a dashboard for vacation inspiration",
-  "version": "0.2",
+  "version": "0.3",
   "incognito": "split",
   "chrome_url_overrides": {
     "newtab": "index.html"
