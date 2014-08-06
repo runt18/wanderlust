@@ -30,4 +30,10 @@ $(document).ready(function() {
   $('#place-link').attr('href', "https://www.google.com/maps/dir/my%20location/" + city + "/");
 
   $('.full-overlay').fadeOut(3000);
+
+  $('.chrome-apps-link').click(openChromeAppsPage);
+
+  function openChromeAppsPage (evt) {
+      chrome.tabs.create({url:'chrome://apps'});
+  }
 });
