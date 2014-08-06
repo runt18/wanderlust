@@ -47,6 +47,8 @@ icons:
 	mkdir -p extension/icons
 	convert -resize x16 image/logo.png site/favicon.png
 	convert -resize x128 image/logo.png extension/icons/128.png
+	convert -resize x48 image/logo.png extension/icons/48.png
+	convert -resize x16 image/logo.png extension/icons/16.png
 
 test:
 	$(MOCHA)
