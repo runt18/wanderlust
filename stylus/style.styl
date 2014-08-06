@@ -21,7 +21,18 @@ h1
   font-size: 120px
 
 h2
-  font-size: 50px
+  font-size: 30px
+
+a:hover
+  text-decoration: none
+
+.chrome-apps-link
+  margin-top: -5em
+  margin-left: -3em
+  position: absolute
+  
+.chrome-apps-link a
+  font-size: 1.4em
 
 *
   box-sizing(border-box)
@@ -82,11 +93,11 @@ body
 .overlay
   height: 100%
   width: 100%
-  background-color: rgba(0, 0, 0, shade_opacity)
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.8)))
 
 .container
   color: rgba(255, 255, 255, text_opacity)
-  padding-top: 60px
+  padding-top: 100px
 
 .btn
   font-size: 40px

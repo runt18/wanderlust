@@ -9,7 +9,7 @@ var milesToTime = function(miles) {
 };
 
 var milesToPrice = function(miles) {
-  return Math.round(50 + miles * 0.11);
+  return Math.round(50 + miles * 0.11) * 2;
 };
 
 var kelvinToCelcius = function(kelvin) {
