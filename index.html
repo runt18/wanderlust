@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>New Tab</title>
+<title><%= title %></title>
 
 <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
@@ -63,12 +63,16 @@
         </div>
     </div>
 
-<!--     <div class="row">
+    <% if (isWeb) { %>
+    <div class="row">
         <div class="col-md-12">
             <button class="btn btn-danger"><i class="fa fa-times"></i> <span class="rejection"></span></button>
         </div>
-    </div> -->
+    </div>
+    <% } %>
 </div>
+
+<script>window.isWeb = <%= isWeb %>;</script>
 
 <script src="vendor/jquery/dist/jquery.js"></script>
 <script src="vendor/geolib/dist/geolib.js"></script>
