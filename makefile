@@ -1,4 +1,4 @@
-.PHONY: deploy site clean install chrome test zip
+.PHONY: deploy site clean install chrome test zip render
 
 BIN = ./node_modules/.bin
 
@@ -11,6 +11,8 @@ PORT = 1234
 
 SITE = site
 
+RENDERMODE = web
+
 VENDOR = \
 	vendor/bootstrap/dist/css/bootstrap.css \
 	vendor/font-awesome/css/font-awesome.css \
@@ -18,9 +20,9 @@ VENDOR = \
 	vendor/jquery/dist/jquery.js \
 	vendor/geolib/dist/geolib.js \
 
-site: webicons
+site: webicons render
 	mkdir -p $(SITE)
-	rsync -Rr index.html image/logo.png $(VENDOR) $(SITE)
+	rsync -Rr image/logo.png $(VENDOR) $(SITE)
 	$(BROWSERIFY) js/main.js > site/all.js
 	$(STYLUS) --use ./node_modules/nib stylus/style.styl -o site
 
@@ -57,3 +59,6 @@ test:
 
 zip:
 	zip -r wanderlust.zip extension
+
+render:
+	node tools/render.js $(RENDERMODE)

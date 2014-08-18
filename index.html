@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>New Tab</title>
+<title><%= title %></title>
 
 <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
@@ -55,12 +55,24 @@
         </div>
     </div>
 
-<!--     <div class="row">
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12 credits">
+            Photo: <a class="title" target="_blank"></a> by <a class="author" target="_blank"></a>, used under <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons Attribution 2.0 Generic</a>
+        </div>
+    </div>
+
+    <% if (isWeb) { %>
+    <div class="row">
         <div class="col-md-12">
             <button class="btn btn-danger"><i class="fa fa-times"></i> <span class="rejection"></span></button>
         </div>
-    </div> -->
+    </div>
+    <% } %>
 </div>
+
+<script>window.isWeb = <%= isWeb %>;</script>
 
 <script src="vendor/jquery/dist/jquery.js"></script>
 <script src="vendor/geolib/dist/geolib.js"></script>

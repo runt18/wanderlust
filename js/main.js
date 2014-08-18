@@ -31,9 +31,9 @@ $(document).ready(function() {
 
   $('.full-overlay').fadeOut(3000);
 
-  $('.chrome-apps-link').click(openChromeAppsPage);
-
-  function openChromeAppsPage (evt) {
+  if (!isWeb) {
+    $('.chrome-apps-link').click(function() {
       chrome.tabs.create({url:'chrome://apps'});
+    });
   }
 });

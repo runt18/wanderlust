@@ -9,7 +9,8 @@
     "mocha": "^1.21.3",
     "nib": "^1.0.3",
     "serve": "^1.4.0",
-    "stylus": "^0.47.3"
+    "stylus": "^0.47.3",
+    "underscore": "^1.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
